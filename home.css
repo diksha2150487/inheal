@@ -6,37 +6,47 @@
 .front_page {
   width: 100%;
   /* background-color: #24262b; */
+  background-image: url("./images/image\ 1.png"),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.902) 0%, rgba(0, 0, 0, 0) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+  background-blend-mode: darken;
+  z-index: 2;
+  padding: 110px;
 }
 .home_cont1 {
   /* background-color: #ccc; */
-  padding: 110px;
+  /* padding: 110px;
   background-image: url("./Images/image\ 1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
   position: relative;
-  z-index: 2;
+  z-index: 2; */
   /* padding-top: 40px; */
 }
-.home_cont1::before {
+/* .home_cont1::before {
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.902) 0%,
+    rgba(0, 0, 0, 0) 90.2%,
     rgba(0, 0, 0, 0) 100%
   );
+
   position: absolute;
-  z-index: -1;
-  /* 
+  z-index: -1; */
+/* 
   width: 100%;
   height: 100%; */
-}
+/* } */
 .home_cont1 > h1 {
   color: #fff;
   font-size: 36px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 40px;
   max-width: 430px;
 }
 .home_cont1 > h5 {
@@ -45,16 +55,18 @@
   font-family: Gilroy-Medium;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 40px;
   max-width: 330px;
 }
 .home_cont1 > p {
   background-color: #ee2c65;
   display: inline;
   border-radius: 6px;
-  padding: 5px 15px 5px 15px;
+  margin-top: 30px;
   color: #ffffff;
   font-size: 20px;
+  padding: 5px;
+  line-height: 40px;
 }
 .home_cont1 > button {
   background-color: #ee2c65;
@@ -112,7 +124,8 @@
 }
 .card_container {
   margin: 10px;
-  margin-top: -3rem;
+  margin-top: -5rem;
+  z-index: 2;
 }
 .bb {
   background-color: #f6faf8;
@@ -255,42 +268,35 @@
   text-align: center;
 }
 .service {
-  width: 130px;
-  height: 40px;
   background: pink;
   color: #ff0066;
   border-radius: 20px;
   border: none;
-  font-size: 15px;
-  margin: 70px 0px 0px 0px;
+  font-size: 14px;
+  margin-top: 70px;
+  display: inline-block;
+  padding: 7px 17px 7px 17px;
 }
 .area {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
   padding-top: 30px;
-  /* line-height: 10rem; */
+
   font-weight: 700;
-  /* line-height: 49px; */
-  /* letter-spacing: 0em; */
   text-align: center;
 }
 
 .industry {
-  font-size: 17px;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   text-align: center;
-  padding-bottom: 15px;
-  padding-top: 20px;
-}
-.gallery {
-  font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 800px;
   text-align: center;
-  padding-top: 0px;
-  line-height: 0px;
-  padding-bottom: 3rem;
+  display: inline-block;
+  line-height: 1.8;
 }
 
 .computer_cont {
@@ -302,28 +308,43 @@
   height: 50px;
 }
 #triger {
-  width: 28px;
-  padding-left: 0px;
+  width: 19px;
+  margin-right: 10px;
 }
 #triger2 {
-  width: 28px;
-  padding-left: 0px;
+  width: 19px;
+  margin-right: 10px;
 }
 #triger3 {
-  width: 28px;
-  padding-left: 0px;
+  width: 19px;
+  margin-right: 10px;
 }
 #triger4 {
-  width: 28px;
-  padding-left: 0px;
+  width: 19px;
+  margin-right: 10px;
+}
+.Label {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 350px;
+  padding: 0.7rem;
+  background-color: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.125s;
+  border-radius: 7px;
+  &:hover {
+    background: oklch(0.8 0 0.1);
+    color: #ffff;
+  }
 }
 .left-class {
-  width: 50%;
+  width: 40%;
   /* background-color: palevioletred; */
   /* padding: 60px; */
 }
 .right-class {
-  width: 50%;
+  width: 60%;
   margin-top: 80px;
   height: 400px;
   background-image: url("./images/image\ 8.png");
@@ -337,13 +358,14 @@ output {
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.125s;
   overflow: hidden;
-  /* gap: 1rem; */
+
   background-color: #ee2c65;
+  border-radius: 7px;
 }
 #dummy {
-  font-size: 16px;
+  font-size: 12px;
   left: 0;
-  line-height: 22px;
+  line-height: 17px;
   font-weight: 100;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
@@ -353,16 +375,18 @@ output {
 .cont {
   display: flex;
   color: white;
+  font-size: 15px;
 }
 #roo {
   color: white;
-  text-align: left;
-  left: 0;
-  text-align: left;
+  text-decoration: none;
+  font-size: 11px;
+  display: inline-block;
 }
 #cont1 {
-  width: 28px;
-  padding: 0px;
+  width: 22px;
+  margin-right: 10px;
+  height: 22px;
 }
 #tablet {
   position: relative;
@@ -371,7 +395,7 @@ output {
   height: 280px;
 }
 .stand {
-  padding: 0px 0px 3rem 2rem;
+  padding: 4px 10px 4px 15px;
 }
 div {
   min-height: 0;
@@ -399,22 +423,6 @@ fieldset {
   margin-inline: auto;
 
   padding: 1rem;
-}
-
-label {
-  display: flex;
-
-  /* border-radius: 20px; */
-  width: 450px;
-  padding: 0.9rem;
-  background-color: white;
-  /* background: oklch(0.9 0 0.1); */
-  cursor: pointer;
-  transition: background 0.125s;
-  border-radius: 7px;
-  &:hover {
-    background: oklch(0.8 0 0.1);
-  }
 }
 
 div > div {
