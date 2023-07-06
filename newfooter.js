@@ -2,7 +2,7 @@ document.write(`<footer>
 <section class="footer">
     <div class="container">
       <div class="row">
-        <div class="footer-col">
+        <div class="footer-col" id="foot_width">
           <img
             src="./images/Asset-3@2x-(2).png" alt='img' id='footer_logo'
           />
@@ -22,7 +22,8 @@ document.write(`<footer>
             <a href="#"><i class="fa-solid fa-s" id="google"></i></a>
           </div>
         </div>
-        <div class="footer-col" id="new">
+        <div class="inline_list">
+         <div class="footer-col" id="new">
           <h4>ABOUT US</h4>
           <ul>
             <li class="in_line">
@@ -38,8 +39,8 @@ document.write(`<footer>
               <a href="#">Financial</a>
             </li>
           </ul>
-        </div>
-        <div class="footer-col">
+          </div>
+         <div class="footer-col">
           <h4>YOUR HELP</h4>
           <ul>
             <li class="in_line">
@@ -55,8 +56,8 @@ document.write(`<footer>
               <a href="#">Monthly Giving</a>
             </li>
           </ul>
-        </div>
-        <div class="footer-col">
+         </div>
+         <div class="footer-col">
           <h4>Contact Us</h4>
           <ul>
             <li class="in_line">
@@ -85,7 +86,8 @@ document.write(`<footer>
             </form>
           </div>
         </div>
-      </div>
+      </div></div>
+        
       <hr class="footer_divider" />
       <div class="copyright">
         <p class="foot_copy">
