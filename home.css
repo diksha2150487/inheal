@@ -282,9 +282,9 @@
 @media (max-width: 521px) {
   .far {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
   }
   .fourth_card {
     padding-bottom: 14rem;
@@ -860,8 +860,9 @@ ul {
   max-width: 400px;
   background: none;
   border: none;
+  display: block;
   padding-left: 8px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 15px;
   color: #6a7c92;
   &:focus {
