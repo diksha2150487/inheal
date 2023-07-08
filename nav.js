@@ -2,7 +2,6 @@ console.log("hlw");
 let nav = document.querySelector("#nav");
 let template = document.createElement("template");
 template.innerHTML = `<header>
-
         <section class="navigation">
             <div class="nav-container">
                 <div class="brand">

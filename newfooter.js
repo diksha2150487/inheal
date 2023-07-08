@@ -22,7 +22,7 @@ document.write(`<footer>
             <a href="#"><i class="fa-solid fa-s" id="google"></i></a>
           </div>
         </div>
-        <div class="footer-col" >
+        <div class="footer-col" id="new">
           <h4>ABOUT US</h4>
           <ul>
             <li class="in_line">
@@ -39,7 +39,7 @@ document.write(`<footer>
             </li>
           </ul>
         </div>
-        <div class="footer-col" >
+        <div class="footer-col">
           <h4>YOUR HELP</h4>
           <ul>
             <li class="in_line">
@@ -56,7 +56,7 @@ document.write(`<footer>
             </li>
           </ul>
         </div>
-        <div class="footer-col" >
+        <div class="footer-col">
           <h4>Contact Us</h4>
           <ul>
             <li class="in_line">
@@ -78,7 +78,7 @@ document.write(`<footer>
                 <input
                   class="form-input"
                   type="email"
-                  placeholder="EmailAddress"
+                  placeholder="Email Address"
                 />
                 <button type="submit" class="form-submit">Submit</button>
               </fieldset>
