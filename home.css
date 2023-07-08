@@ -1035,3 +1035,49 @@ ul {
   width: 200px;
   margin: 20px;
 }
+.all-memb {
+  background-color: #ee2c65;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+  border: none;
+  color: #f6faf8;
+  border-radius: 7px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  padding: 12px 40px 12px 40px;
+}
+/* ******************************************************* */
+.eight_card {
+  background-color: white;
+  text-align: center;
+}
+.faq {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  padding-top: 33px;
+  font-weight: 700;
+  text-align: center;
+}
+.school {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  max-width: 850px;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.6;
+}
+.ylok {
+  max-width: 80%;
+  padding-top: 25px;
+}
+#kko {
+  margin-top: 0px;
+}
+#alo {
+  margin-bottom: 7rem;
+}
