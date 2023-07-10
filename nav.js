@@ -2,56 +2,53 @@ console.log("hlw");
 let nav = document.querySelector("#nav");
 let template = document.createElement("template");
 template.innerHTML = `<header>
-        <section class="navigation">
-            <div class="nav-container">
-                <div class="brand">
-                    <a><img src="./images/Asset-3@2x-(2).png" alt="logo" class="nav_logo" /></a>
-                </div>
-                <nav>
-                    <div class="nav-mobile">
-                        <a id="navbar-toggle" href="#!"><span></span></a>/
-                    </div>
-                    <ul class="nav-list">
-                        <li>
-                            <a href="#!" id="home">HOME</a>
-                        </li>
-                        <li>
-                            <a href="#!">ABOUT US</a>
-                        </li>
-                        <li>
-                            <a href="#!">PRODUCTS</a>
-                            <ul class="navbar-dropdown">
-                                <li>
-                                    <a href="#!">Service</a>
-                                </li>
-                                <li>
-                                    <a href="#!">CONSTUANTY</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Stylus</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#!">SERVICES</a>
-                            <ul class="navbar-dropdown">
-                                <li>
-                                    <a href="#!">Sass</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Less</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Stylus</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="side_btn">
-                            <a href="#!">CONSULTANCY <i class="fa-solid fa-arrow-right"></i></a>
-                        </li>
-                </nav>
-            </div>
-            </section>
+<nav class="navbar">
+<!-- LOGO -->
+<div class="logo">
+  <a><img src="./images/Asset-3@2x-(2).png" class="nav_logo" /></a>
+</div>
+
+<!-- NAVIGATION MENU -->
+<ul class="nav-links">
+  <!-- USING CHECKBOX HACK -->
+  <input type="checkbox" id="checkbox_toggle" />
+  <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+  <!-- NAVIGATION MENUS -->
+  <div class="menu">
+    <li><a href="/" id="hoo">HOME</a></li>
+    <li><a href="/">ABOUT US</a></li>
+
+    <li class="services">
+      <a href="/">PRODUCT <i class="fa-solid fa-chevron-down"></i></a>
+
+      <!-- DROPDOWN MENU -->
+      <ul class="dropdown">
+        <li><a href="/">Dropdown</a></li>
+        <li><a href="/">Dropdown</a></li>
+        <li><a href="/">Dropdown</a></li>
+        <li><a href="/">Dropdown</a></li>
+        <li><a href="/">Dropdown</a></li>
+      </ul>
+    </li>
+    <li class="services">
+      <a href="/">SERVICE <i class="fa-solid fa-chevron-down"></i></a>
+
+      <!-- DROPDOWN MENU -->
+      <ul class="dropdown">
+        <li><a href="/">Dropdown</a></li>
+        <li><a href="/">Dropdown</a></li>
+        <li><a href="/">Dropdown</a></li>
+        <li><a href="/">Dropdown</a></li>
+        <li><a href="/">Dropdown</a></li>
+      </ul>
+    </li>
+    <li class="side_btn">
+      <a href="#!">CONSULTANCY <i class="fa-solid fa-arrow-right"></i></a>
+    </li>
+  </div>
+</ul>
+</nav>
         
 <Headers>`;
 nav.appendChild(template.content);
