@@ -605,13 +605,11 @@ li {
   display: block;
 }
 /* RESPONSIVE NAVBAR MENU STARTS */
-
 /* CHECKBOX HACK */
 
 input[type="checkbox"] {
   display: none;
 }
-
 /* HAMBURGER MENU */
 .hamburger {
   display: none;
@@ -620,17 +618,17 @@ input[type="checkbox"] {
   /* border: 1px solid white;
   padding: 10px; */
 }
-
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 1130px) {
   .menu {
     display: none;
     position: absolute;
-    background-color: gray;
+    background-color: #ee2c65;
     right: 0;
     left: 0;
     text-align: center;
     padding: 16px 0;
+    z-index: 3;
     margin-top: 26px;
   }
   .nav_logo {
