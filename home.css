@@ -274,6 +274,7 @@
   .right_section,
   .left_section {
     width: 100%;
+    align-items: center;
     /* background-color: #ccc; */
   }
 }
@@ -283,12 +284,26 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    align-items: center;
   }
   .fourth_card {
     padding-bottom: 14rem;
   }
   .left_section {
     padding-left: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .pars {
+    font-size: 11px;
+  }
+  .dummy1 {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+  }
+  .touch {
+    align-items: center;
   }
 }
 /* ********************* */
@@ -946,7 +961,6 @@ ul {
   color: #bbbbbb;
 }
 /* ******************************************** */
-
 .six_card {
   background-color: white;
   text-align: center;
@@ -973,12 +987,14 @@ ul {
   font-weight: 700;
   text-align: center;
 }
-.bog-box {
+.big-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 40px;
+  width: 100%;
+  /* background-color: #ccc; */
 }
 .hko {
   text-align: left;
@@ -990,20 +1006,22 @@ ul {
   padding-left: 8px;
 }
 .long-box {
-  padding: 15px 0px 20px 15px;
+  padding: 15px 0px 25px 15px;
   background-color: white;
-  max-width: 65%;
+  width: 70%;
   border-radius: 8px;
   text-align: left;
   background-image: url(./images/image\ 11.png);
+  background-position: right 1px;
+  /* background-size: auto; */
+  background-size: 150px 100%;
   box-shadow: 0px 0px 20px 0px #00000029;
   background-repeat: no-repeat;
 }
-
 .book {
   font-size: 13.1px;
   font-family: "Quicksand", sans-serif;
-  max-width: 73%;
+  max-width: 69%;
   padding-top: 12px;
   padding-left: 8px;
 }
@@ -1018,18 +1036,28 @@ ul {
   color: #fd6161;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
-  padding-top: 6px;
+  margin-top: 6px;
   font-weight: 600;
   padding-left: 12px;
 }
 .tall-box {
-  padding: 15px 35px 40px 15px;
+  padding: 15px 35px 45px 15px;
   background-color: white;
-  max-width: 32%;
+  width: 34%;
   border-radius: 8px;
   text-align: left;
   box-shadow: 0px 0px 20px 0px #00000029;
   margin: 12px;
+  background-image: url(./images/Group\ 14214.png);
+  background-position: right 1px;
+  background-repeat: no-repeat;
+  background-size: 140px 100%;
+}
+#blibg {
+  background-image: url(./images/Group\ 16172.png);
+  background-position: right 1px;
+  background-repeat: no-repeat;
+  background-size: 140px 100%;
 }
 .llo {
   text-align: left;
@@ -1050,7 +1078,20 @@ ul {
   padding-top: 12px;
   padding-left: 8px;
 }
-
+@media (max-width: 1090px) {
+  .double-main {
+    flex-direction: column;
+    justify-content: center;
+    background-color: beige;
+    align-items: center;
+  }
+  .tall-box {
+    width: 95%;
+  }
+  .long-box {
+    width: 95%;
+  }
+}
 /* **************************************************** */
 .seven_card {
   background-color: #edf5f8;
@@ -1102,6 +1143,7 @@ ul {
   padding: 12px 40px 12px 40px;
 }
 /* ******************************************************* */
+
 .eight_card {
   background-color: white;
   text-align: center;
@@ -1125,15 +1167,65 @@ ul {
   display: inline-block;
   line-height: 1.6;
 }
-.ylok {
+.faqAccordion {
   max-width: 80%;
-  padding-top: 25px;
+  margin: 0 auto;
 }
-#kko {
-  margin-top: 0px;
+.line1 {
+  font-size: 20px;
+  padding-top: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
-#alo {
-  margin-bottom: 3rem;
+.line2 {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding-top: 20px;
+}
+.faqAccordion__header {
+  background-color: #d0d0d0;
+  padding: 20px 40px 45px 20px;
+  cursor: pointer;
+  font-size: 10px;
+  color: black;
+  border-radius: 10px;
+  font-weight: 200px;
+  text-align: left;
+  position: relative;
+}
+.faqAccordion__header.is-active::before {
+  transform: translateY(-50%) rotate(90deg);
+}
+.faqAccordion__header::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+.faqAccordion__header::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 21px;
+  transform: translateY(-50%);
+}
+.faqAccordion__content {
+  background-color: white;
+  overflow: hidden;
+  border-top: 1px solid #f5f5f5;
+}
+.faqAccordion__contentInner {
+  padding: 10px;
 }
 /* ****************************************************** */
 .nine_card {
