@@ -74,9 +74,9 @@ document.write(`<footer>
           </ul>
           <div class="formContainer">
             <form action="">
-              <fieldset class="fieldInput">
+              <fieldset class="ylo">
                 <input
-                  class="form-input"
+                  class="sub_size"
                   type="email"
                   placeholder="Email Address"
                 />
