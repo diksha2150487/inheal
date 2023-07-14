@@ -16,32 +16,34 @@ template.innerHTML = `<header>
 
   <!-- NAVIGATION MENUS -->
   <div class="menu">
-    <li><a href="/" id="hoo">HOME</a></li>
-    <li><a href="/">ABOUT US</a></li>
+    <li><a href="#" id="hoo">HOME</a></li>
+    <li><a href="#">ABOUT US</a></li>
 
     <li class="services">
-      <a href="/">PRODUCT <i class="fa-solid fa-chevron-down"></i></a>
+      <a href="#">PRODUCT <i class="fa-solid fa-chevron-down"></i></a>
 
       <!-- DROPDOWN MENU -->
-      <ul class="dropdown">
+    <!--   <ul class="dropdown">
         <li><a href="/">Dropdown</a></li>
         <li><a href="/">Dropdown</a></li>
         <li><a href="/">Dropdown</a></li>
         <li><a href="/">Dropdown</a></li>
         <li><a href="/">Dropdown</a></li>
       </ul>
+      -->
     </li>
     <li class="services">
-      <a href="/">SERVICE <i class="fa-solid fa-chevron-down"></i></a>
+      <a href="#">SERVICE <i class="fa-solid fa-chevron-down"></i></a>
 
       <!-- DROPDOWN MENU -->
-      <ul class="dropdown">
+  <!--  <ul class="dropdown">
         <li><a href="/">Dropdown</a></li>
         <li><a href="/">Dropdown</a></li>
         <li><a href="/">Dropdown</a></li>
         <li><a href="/">Dropdown</a></li>
         <li><a href="/">Dropdown</a></li>
       </ul>
+    -->  
     </li>
     <li class="side_btn">
       <a href="#!">CONSULTANCY <i class="fa-solid fa-arrow-right"></i></a>
